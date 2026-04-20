@@ -9,4 +9,14 @@
     <Project Path="Tyuiu.ZaitsevMS.Sprint2.Task1.V0.Test/Tyuiu.ZaitsevMS.Sprint2.Task1.V0.Test.csproj" />
     <Project Path="Tyuiu.ZaitsevMS.Sprint2.Task1.V0/Tyuiu.ZaitsevMS.Sprint2.Task1.V0.csproj" />
   </Folder>
+  <Folder Name="/Task2/">
+    <Project Path="Tyuiu.ZaitsevMS.Sprint2.Task2.V0.Lib/Tyuiu.ZaitsevMS.Sprint2.Task2.V0.Lib.csproj" />
+    <Project Path="Tyuiu.ZaitsevMS.Sprint2.Task2.V0.Test/Tyuiu.ZaitsevMS.Sprint2.Task2.V0.Test.csproj" />
+    <Project Path="Tyuiu.ZaitsevMS.Sprint2.Task2.V0/Tyuiu.ZaitsevMS.Sprint2.Task2.V0.csproj" />
+  </Folder>
+  <Folder Name="/Task3/">
+    <Project Path="Tyuiu.ZaitsevMS.Sprint2.Task3.V0.Lib/Tyuiu.ZaitsevMS.Sprint2.Task3.V0.Lib.csproj" />
+    <Project Path="Tyuiu.ZaitsevMS.Sprint2.Task3.V0.Test/Tyuiu.ZaitsevMS.Sprint2.Task3.V0.Test.csproj" />
+    <Project Path="Tyuiu.ZaitsevMS.Sprint2.Task3.V0/Tyuiu.ZaitsevMS.Sprint2.Task3.V0.csproj" />
+  </Folder>
 </Solution>
