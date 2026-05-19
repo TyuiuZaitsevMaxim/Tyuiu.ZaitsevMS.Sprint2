@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Tyuiu.ZaitsevMS.Sprint2.Task3.V8.Lib;
 
 namespace Tyuiu.ZaitsevMS.Sprint2.Task3.V8
-{
+{ 
     internal class Program
     {
         static void Main(string[] args)

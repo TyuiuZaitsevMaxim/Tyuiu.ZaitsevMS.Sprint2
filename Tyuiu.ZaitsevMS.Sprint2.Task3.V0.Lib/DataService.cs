@@ -8,7 +8,7 @@ using tyuiu.cources.programming.interfaces.Sprint2;
 namespace Tyuiu.ZaitsevMS.Sprint2.Task3.V8.Lib
 {
     public class DataService : ISprint2Task3V8
-    {
+    { 
         public double Calculate(double x)
         {
             double y = 0;
