@@ -6,7 +6,7 @@ namespace Tyuiu.ZaitsevMS.Sprint2.Task6.V5.Test
 {
     [TestClass]
     public class DataServiceTest
-    {
+    { 
         [TestMethod]
         public void ValidFindCardValue()
         {
