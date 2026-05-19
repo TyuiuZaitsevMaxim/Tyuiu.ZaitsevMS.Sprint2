@@ -7,7 +7,7 @@ namespace Tyuiu.ZaitsevMS.Sprint2.Task5.V15.Test
     [TestClass]
     public class DataServiceTest
     {
-        [TestMethod]
+        [TestMethod] 
         public void ValidFindDayName()
         {
             DataService ds = new DataService();
