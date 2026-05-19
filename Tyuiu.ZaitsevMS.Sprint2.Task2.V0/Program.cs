@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint2.Task2.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint2.Task2.V14.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint2.Task2.V0
+namespace Tyuiu.ZaitsevMS.Sprint2.Task2.V14
 {
     internal class Program
     {
@@ -16,12 +16,12 @@ namespace Tyuiu.ZaitsevMS.Sprint2.Task2.V0
             Console.WriteLine("* Спринт #2                                                               *");
             Console.WriteLine("* Тема: Преобразование типов и класс Convert                              *");
             Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #14                                                             *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, которая запрашивает целые значения с клавиатуры и   *");
-            Console.WriteLine("* вычисляет находится ли точка с координатами X, Y в заштрихованной       *");
+            Console.WriteLine("* вычисляет, находится ли точка с координатами X, Y в заштрихованной      *");
             Console.WriteLine("* области.                                                                *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");

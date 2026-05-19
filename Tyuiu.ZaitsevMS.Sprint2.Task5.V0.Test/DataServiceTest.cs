@@ -1,37 +1,35 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint2.Task5.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint2.Task5.V15.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint2.Task5.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint2.Task5.V15.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidFindMonthName()
+        public void ValidFindDayName()
         {
             DataService ds = new DataService();
 
-            Assert.AreEqual("Январь", ds.FindMonthName(1));
-            Assert.AreEqual("Февраль", ds.FindMonthName(2));
-            Assert.AreEqual("Март", ds.FindMonthName(3));
-            Assert.AreEqual("Апрель", ds.FindMonthName(4));
-            Assert.AreEqual("Май", ds.FindMonthName(5));
-            Assert.AreEqual("Июнь", ds.FindMonthName(6));
-            Assert.AreEqual("Июль", ds.FindMonthName(7));
-            Assert.AreEqual("Август", ds.FindMonthName(8));
-            Assert.AreEqual("Сентябрь", ds.FindMonthName(9));
-            Assert.AreEqual("Октябрь", ds.FindMonthName(10));
-            Assert.AreEqual("Ноябрь", ds.FindMonthName(11));
-            Assert.AreEqual("Декабрь", ds.FindMonthName(12));
+            Assert.AreEqual("Понедельник", ds.FindDayName(1));
+            Assert.AreEqual("Вторник", ds.FindDayName(2));
+            Assert.AreEqual("Среда", ds.FindDayName(3));
+            Assert.AreEqual("Четверг", ds.FindDayName(4));
+            Assert.AreEqual("Пятница", ds.FindDayName(5));
+            Assert.AreEqual("Суббота", ds.FindDayName(6));
+            Assert.AreEqual("Воскресенье", ds.FindDayName(7));
+            Assert.AreEqual("Понедельник", ds.FindDayName(8));
+            Assert.AreEqual("Вторник", ds.FindDayName(100));
+            Assert.AreEqual("Понедельник", ds.FindDayName(365));
 
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindMonthName(-1);
+                ds.FindDayName(0);
             });
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindMonthName(13);
+                ds.FindDayName(366);
             });
         }
     }

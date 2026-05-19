@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint2.Task3.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint2.Task3.V8.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint2.Task3.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint2.Task3.V8.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -13,7 +13,7 @@ namespace Tyuiu.ZaitsevMS.Sprint2.Task3.V0.Test
             DataService ds = new DataService();
             double x = 1;
             double res = ds.Calculate(x);
-            double wait = 13;
+            double wait = -4.588;
             Assert.AreEqual(wait, res);
         }
 
@@ -23,7 +23,7 @@ namespace Tyuiu.ZaitsevMS.Sprint2.Task3.V0.Test
             DataService ds = new DataService();
             double x = 0;
             double res = ds.Calculate(x);
-            double wait = 0.333;
+            double wait = 0.75;
             Assert.AreEqual(wait, res);
         }
 
@@ -31,9 +31,9 @@ namespace Tyuiu.ZaitsevMS.Sprint2.Task3.V0.Test
         public void ValidCondition3()
         {
             DataService ds = new DataService();
-            double x = -2;
+            double x = -1;
             double res = ds.Calculate(x);
-            double wait = -0.909;
+            double wait = 4.0;
             Assert.AreEqual(wait, res);
         }
 
@@ -41,9 +41,9 @@ namespace Tyuiu.ZaitsevMS.Sprint2.Task3.V0.Test
         public void ValidCondition4()
         {
             DataService ds = new DataService();
-            double x = -6;
+            double x = -13;
             double res = ds.Calculate(x);
-            double wait = -2.333;
+            double wait = -142.615;
             Assert.AreEqual(wait, res);
         }
     }

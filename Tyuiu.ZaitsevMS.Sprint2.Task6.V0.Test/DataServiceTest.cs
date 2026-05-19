@@ -1,37 +1,34 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint2.Task6.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint2.Task6.V5.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint2.Task6.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint2.Task6.V5.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidFindMonthName()
+        public void ValidFindCardValue()
         {
             DataService ds = new DataService();
 
-            Assert.AreEqual("Январь", ds.FindMonthName(1));
-            Assert.AreEqual("Февраль", ds.FindMonthName(2));
-            Assert.AreEqual("Март", ds.FindMonthName(3));
-            Assert.AreEqual("Апрель", ds.FindMonthName(4));
-            Assert.AreEqual("Май", ds.FindMonthName(5));
-            Assert.AreEqual("Июнь", ds.FindMonthName(6));
-            Assert.AreEqual("Июль", ds.FindMonthName(7));
-            Assert.AreEqual("Август", ds.FindMonthName(8));
-            Assert.AreEqual("Сентябрь", ds.FindMonthName(9));
-            Assert.AreEqual("Октябрь", ds.FindMonthName(10));
-            Assert.AreEqual("Ноябрь", ds.FindMonthName(11));
-            Assert.AreEqual("Декабрь", ds.FindMonthName(12));
+            Assert.AreEqual("Шестёрка", ds.FindCardValue(6));
+            Assert.AreEqual("Семёрка", ds.FindCardValue(7));
+            Assert.AreEqual("Восьмёрка", ds.FindCardValue(8));
+            Assert.AreEqual("Девятка", ds.FindCardValue(9));
+            Assert.AreEqual("Десятка", ds.FindCardValue(10));
+            Assert.AreEqual("Валет", ds.FindCardValue(11));
+            Assert.AreEqual("Дама", ds.FindCardValue(12));
+            Assert.AreEqual("Король", ds.FindCardValue(13));
+            Assert.AreEqual("Туз", ds.FindCardValue(14));
 
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindMonthName(-1);
+                ds.FindCardValue(5);
             });
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindMonthName(13);
+                ds.FindCardValue(15);
             });
         }
     }

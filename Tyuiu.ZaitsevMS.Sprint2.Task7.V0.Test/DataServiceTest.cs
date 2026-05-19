@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint2.Task7.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint2.Task7.V5.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint2.Task7.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint2.Task7.V5.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -12,14 +12,12 @@ namespace Tyuiu.ZaitsevMS.Sprint2.Task7.V0.Test
         {
             DataService ds = new DataService();
 
-            double x = 0.7;
-            double y = 0.7;
+            Assert.AreEqual(true, ds.CheckDotInShadedArea(0.0, 0.5));
+            Assert.AreEqual(true, ds.CheckDotInShadedArea(0.0, 0.0));
 
-            bool res = ds.CheckDotInShadedArea(x, y);
-
-            bool wait = true;
-
-            Assert.AreEqual(wait, res);
+            Assert.AreEqual(false, ds.CheckDotInShadedArea(0.0, 1.5));
+            Assert.AreEqual(false, ds.CheckDotInShadedArea(0.0, -0.1));
+            Assert.AreEqual(false, ds.CheckDotInShadedArea(2.0, 0.5));
         }
     }
 }

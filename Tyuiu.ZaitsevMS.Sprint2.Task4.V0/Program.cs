@@ -3,29 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint2.Task4.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint2.Task4.V4.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint2.Task4.V0
+namespace Tyuiu.ZaitsevMS.Sprint2.Task4.V4
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            
+
             Console.Title = "Спринт #2 | Выполнил: Зайцев М. С. | ИБКСб-25-1";
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
             Console.WriteLine("* Тема: Тернарный оператор                                                *");
             Console.WriteLine("* Задание #4                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #4                                                              *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, которая вычисляет требуемое значение с              *");
             Console.WriteLine("* использованием тернарного оператора, где пользователь вводит значение   *");
-            Console.WriteLine("* переменных x, y с клавиатуры                                            *");
+            Console.WriteLine("* переменных x, y с клавиатуры.                                           *");
+            Console.WriteLine("* Если x + 2 < y, то z = sin(x) + 2y, иначе z = cos(y) + 2xy.             *");
+            Console.WriteLine("* Ответ округлить до 3 знаков после запятой.                              *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
