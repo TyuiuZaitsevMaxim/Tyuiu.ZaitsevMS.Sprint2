@@ -5,7 +5,7 @@ using Tyuiu.ZaitsevMS.Sprint2.Task7.V5.Lib;
 namespace Tyuiu.ZaitsevMS.Sprint2.Task7.V5.Test
 {
     [TestClass]
-    public class DataServiceTest
+    public class DataServiceTest 
     {
         [TestMethod]
         public void ValidCheckDotInShadedArea()
