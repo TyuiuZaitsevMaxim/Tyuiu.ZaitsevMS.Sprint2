@@ -7,7 +7,7 @@ namespace Tyuiu.ZaitsevMS.Sprint2.Task1.V24.Test
     [TestClass]
     public class DataServiceTest
     {
-        [TestMethod]
+        [TestMethod] 
         public void ValidGetLogicOperations()
         {
             DataService ds = new DataService();
